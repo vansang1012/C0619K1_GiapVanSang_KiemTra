@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số Nguyên Tố</title>
+</head>
+<body>
+<script>
+    let input = prompt("Mời bạn nhập vào số cần kiểm tra:");
+    let check=isPrime(input);
+    document.write(check);
+    function isPrime(so) {
+        isNguyenTo = true;
+        if(so<2){
+            return false;
+        }else{
+            for (let i = 2; i <= Math.sqrt(so); i++) {
+                if (input % i == 0) {
+                    isNguyenTo = false;
+                }
+            }
+
+            return isNguyenTo;
+        }
+
+    }
+
+</script>
+</body>
+</html>
