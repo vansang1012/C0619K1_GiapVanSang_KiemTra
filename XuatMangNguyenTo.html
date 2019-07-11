@@ -6,8 +6,9 @@
 </head>
 <body>
 <script>
-    listPrimes(mang);
     let mang = [1, 2, 5, -2, 10, 7, 9, -20];
+    listPrimes(mang);
+    document.write("Mảng các số nguyên tố là : " + listPrimes(mang));
     function listPrimes(arr) {
 
         let arrNew = []
@@ -18,7 +19,7 @@
             }
 
         }
-        document.write("Mảng các số nguyên tố là : " + arrNew);
+        return arrNew;
 
     }
 
